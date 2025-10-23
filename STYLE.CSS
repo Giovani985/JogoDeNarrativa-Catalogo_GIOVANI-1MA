@@ -1,22 +1,42 @@
 body {
-    background-color: #1D4221;
-    color: white;
+    /* Cores adaptadas para uma temática de masmorra */
+    background-color: #0d0d0d; /* Fundo mais escuro */
+    color: #f0f0f0; /* Texto claro */
     font-family: "Bai Jamjuree", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    /* Reduzi a altura para melhor visualização em telas menores */
+    min-height: 100vh; 
     margin: 0;
+    padding: 20px;
+    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho total */
 }
 
 button {
-    background-color: #64A712;
+    /* Cores para parecerem botões de pedra/antigos */
+    background-color: #3f4a38; /* Cinza esverdeado escuro */
     color: white;
     font-family: "Bai Jamjuree", sans-serif;
+    border: 2px solid #64A712; /* Borda destacada */
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #64A712; /* Efeito hover para destaque */
 }
 
 .passo {
     display: none;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .passo.ativo {
@@ -25,9 +45,17 @@ button {
 
 main {
     text-align: center;
-    max-width: 90%;
+    max-width: 600px;
+    width: 90%;
 }
 
 img {
-    max-width: 90%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+h1, h2 {
+    color: #ffcc00; /* Destaque para títulos */
 }
